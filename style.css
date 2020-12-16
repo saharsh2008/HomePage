@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: white;
+    transition: all .5s ease;
+    border-right: 1px solid black;
+    margin-top: -20px;
+    z-index: 1000;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+    padding-right: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+    font-family: 'Bebas Neue', cursive;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    position: fixed;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -250px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    position: fixed;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 250px;
+}
+
+#welcome {
+    background: url("laptop-wallpaper_mock_deep-blue-dream_scott-denholm-art.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: .5s ease;
+    text-align: center;
+    margin-top: -40px;
+}
+
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+#header {
+    font-size: 70px;
+    padding-top: 200px;
+    font-family: 'Noto Sans HK', sans-serif;
+    color: white;
+}
+
+#about {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+}
+
+#feedback {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 20px;
+    font-weight: ;
+    color: white;
+    padding-top: 250px;
+    text-decoration: underline;
+}
+
+.line {
+    height: 6px;
+    background-color: black;
+    width: 125px;
+    margin: 8px auto;
+}
+
+#header2 {
+    font-size: 45px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.category {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: gray;
+    padding-top: 100px;
+    padding-left: 75px;
+}
+
+.aboutTopic {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 450;
+    font-size: 40px;
+    padding-left: 75px;
+    padding-bottom: 100px;
+}
+
+#profile {
+    width: 515px;
+    text-align: center;
+    box-shadow: 0px 1px 10px 1px #000;
+    border: solid 2px #e0e0e0;
+    background-color: #e0e0e0;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+#discription {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    padding-bottom: 5px;
+    width: 600px;
+    padding-top: 20px;
+}
+
+#discription1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    padding-bottom: 5px;
+    width: 500px;
+}
+
+#discription2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    padding-bottom: 5px;
+    width: 500px;
+    padding-top: 50px
+}
+
+#thanx {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+
+.line2 {
+    height: 6px;
+    background-color: black;
+    width: 475px;
+    margin: 8px auto;
+}
+
+#contains {
+    font-size: 45px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#stuff {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: left;
+    width: 350px;
+    padding-top: 6px;
+}
+
+
+#andMore {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+
+.area {
+    transition: .5s ease;
+}
+
+#more {
+    transition: .5s ease;
+    box-shadow: 0px 1px 10px 1px #000;
+    border: solid 2px #e0e0e0;
+    background-color: #e0e0e0;
+    width: 500px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+}
+
+#outerProfile {
+    transition: .5s ease;
+}
+
+#outerMore {
+    transition: .5s ease;
+}
+
+hr {
+    border: solid 2px gray;
+}
+
+#ultimate {
+    transition: .5s ease;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ff0000' fill-opacity='0.8' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+#header3 {
+    font-size: 45px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.food {
+    box-shadow: 0px 1px 10px 1px #000;
+    border: solid 2px #e0e0e0;
+    background-color: #e0e0e0;
+    width: 615px;
+    border-radius: 6px;
+}
+
+.deserts {
+    box-shadow: 0px 1px 10px 1px #000;
+    border: solid 2px #e0e0e0;
+    background-color: #e0e0e0;
+    width: 615px;
+    border-radius: 6px;
+}
+
+#arrow-down {
+    width: 75px;
+    height: 75px;
+}
+
+
+#mycarousel1 {
+    width: 900px;
+    height: 410px;
+    border: solid 2px #e0e0e0;
+    background-color: gray;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+#mycarousel1 p {
+    padding-top: 30px;
+}
+
+#app {
+    box-shadow: 0px 1px 10px 1px #000;
+    border: solid 2px #e0e0e0;
+    background-color: #e0e0e0;
+    width: 950px;
+}
+
+#mycarousel {
+    width: 900px;
+    height: 410px;
+    border: solid 2px #e0e0e0;
+    background-color: gray;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+#mycarousel p {
+    padding-top: 30px;
+}
+
+#games {
+    box-shadow: 0px 1px 10px 1px #000;
+    border: solid 2px #e0e0e0;
+    background-color: #e0e0e0;
+    width: 950px;
+    margin-bottom: 40px;
+}
+
+#mycarousel img {
+    border-radius: 10px;
+}
+
+#mycarousel1 img {
+    border-radius: 10px;
+}
+
+.deserts img,
+.food img {
+    padding-top: 10px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.card-container {
+    width: 330px;
+    height: 490px;
+    background: #FFF;
+    border-radius: 6px;
+    position: absolute;
+    top: 1015%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 10px 1px #000;
+    overflow: hidden;
+    display: inline-block;
+    transition: .5s ease;
+}
+
+.upper-container {
+    height: 150px;
+    background: #7F00FF;
+}
+
+.image-container {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 0px;
+    transform: translate(5px, 100px);
+}
+
+.image-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.lower-container {
+    height: 280px;
+    background: #FFF;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.lower-container h3,
+h4 {
+    box-sizing: border-box;
+    line-height: .6;
+    font-weight: lighter;
+}
+
+.lower-container h4 {
+    color: #7F00FF;
+    opacity: .6;
+    font-weight: bold;
+}
+
+.lower-container p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 30px;
+    width: 300px;
+    transition: all .5s ease-in;
+}
+
+.lower-container .btn {
+    padding: 12px 20px;
+    background: #7F00FF;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+
+.lower-container .btn:hover {
+    background: transparent;
+    color: #7F00FF;
+    border: 2px solid #7F00FF;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.card-container1 {
+    width: 330px;
+    height: 490px;
+    background: #FFF;
+    border-radius: 6px;
+    position: absolute;
+    top: 1015%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 10px 1px #000;
+    overflow: hidden;
+    display: inline-block;
+    transition: .5s ease;
+}
+
+.upper-container1 {
+    height: 150px;
+    background: #7F00FF;
+}
+
+.image-container1 {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 0px;
+    transform: translate(5px, 100px);
+}
+
+.image-container1 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.lower-container1 {
+    height: 280px;
+    background: #FFF;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.lower-container1 h3,
+h4 {
+    box-sizing: border-box;
+    line-height: .6;
+    font-weight: lighter;
+}
+
+.lower-container1 h4 {
+    color: #7F00FF;
+    opacity: .6;
+    font-weight: bold;
+}
+
+.lower-container1 p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 36px;
+    width: 300px;
+    transition: all .5s ease-in;
+}
+
+.lower-container1 .btn1 {
+    padding: 14px 20px;
+    background: #7F00FF;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s ease-in;
+}
+
+.lower-container1 .btn1:hover {
+    background: transparent;
+    color: #7F00FF;
+    border: 2px solid #7F00FF;
+}
+
+.card-container:hover {
+    width: 350px;
+    height: 510px;
+}
+
+.card-container1:hover {
+    width: 350px;
+    height: 510px;
+}
+
+.card-container:hover .lower-container p {
+    padding-left: 10px;
+}
+
+.card-container1:hover .lower-container1 p {
+    padding-left: 10px;
+}
